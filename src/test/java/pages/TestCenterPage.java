@@ -21,4 +21,34 @@ public class TestCenterPage {
 
     public SelenideElement checkbox2=$(By.id("box2"));
 
+    //Radio Button
+
+    public SelenideElement red=$(By.id("red"));
+
+    public SelenideElement football=$(By.id("football"));
+
+    //Dropdown
+
+    public SelenideElement year=$(By.id("year"));
+
+    public SelenideElement month=$(By.id("month"));
+
+    public SelenideElement day=$(By.id("day"));
+
+    //Alert
+
+    public SelenideElement alertPrompt=$(By.xpath("//button[@onclick='jsPrompt()']"));
+
+    public SelenideElement alertresult=$(By.id("result"));
+
+    //Iframe
+
+    public SelenideElement backToTech=$("a[type='button']");
+
+
+
+
+
+
+
 }

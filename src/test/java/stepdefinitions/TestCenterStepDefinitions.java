@@ -50,5 +50,22 @@ public class TestCenterStepDefinitions {
             testCenterPage.checkbox2.click();
             testCenterPage.checkbox2.shouldBe(checked);
         }
+
+        if (text.equals("Red") && !testCenterPage.red.isSelected()) {
+
+            testCenterPage.red.shouldNotBe(checked);
+            testCenterPage.red.click();
+            testCenterPage.red.shouldBe(checked);
+        }
+
+        if (text.equals("Football") && !testCenterPage.football.isSelected()) {
+
+            testCenterPage.football.shouldNotBe(checked);
+            testCenterPage.football.click();
+            testCenterPage.football.shouldBe(checked);
+        }
+
+
+
     }
 }
