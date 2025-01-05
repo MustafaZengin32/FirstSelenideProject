@@ -45,6 +45,15 @@ public class TestCenterPage {
 
     public SelenideElement backToTech=$("a[type='button']");
 
+    //Drop and Drop
+
+    public SelenideElement dropSource=$("#draggable");
+
+    public SelenideElement dropTarget=$("#droppable");
+
+
+
+
 
 
 
