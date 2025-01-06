@@ -1,35 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="19.174" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="screenshots" name="tum ekran goruntusu" time="18.644">
-<failure type="com.codeborne.selenide.ex.ElementNotFound" message="Element not found {By.xpath: //body[@jsmodel='hspDDf']}
-Expected: exist
-Screenshot: file:/C:/Users/Lenovo%20i5/Desktop/MyFirstSelenideProject/build/reports/tests/1736123326573.0.png
-Page source: file:/C:/Users/Lenovo%20i5/Desktop/MyFirstSelenideProject/build/reports/tests/1736123326573.0.html
+<testsuite name="Cucumber" time="70.139" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="cross browser" name="TC02 firefox" time="69.494">
+<failure type="com.codeborne.selenide.ex.ElementNotFound" message="Element not found {By.id: L2AGLb}
+Expected: clickable: interactable and enabled
+Screenshot: file:/C:/Users/Lenovo%20i5/Desktop/MyFirstSelenideProject/build/reports/tests/1736124152030.0.png
+Page source: file:/C:/Users/Lenovo%20i5/Desktop/MyFirstSelenideProject/build/reports/tests/1736124152030.0.html
 Timeout: 4 s.
-Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//body[@jsmodel='hspDDf']&quot;}">
-<![CDATA[Element not found {By.xpath: //body[@jsmodel='hspDDf']}
-Expected: exist
-Screenshot: file:/C:/Users/Lenovo%20i5/Desktop/MyFirstSelenideProject/build/reports/tests/1736123326573.0.png
-Page source: file:/C:/Users/Lenovo%20i5/Desktop/MyFirstSelenideProject/build/reports/tests/1736123326573.0.html
+Caused by: NoSuchElementException: Unable to locate element: #L2AGLb">
+<![CDATA[Element not found {By.id: L2AGLb}
+Expected: clickable: interactable and enabled
+Screenshot: file:/C:/Users/Lenovo%20i5/Desktop/MyFirstSelenideProject/build/reports/tests/1736124152030.0.png
+Page source: file:/C:/Users/Lenovo%20i5/Desktop/MyFirstSelenideProject/build/reports/tests/1736124152030.0.html
 Timeout: 4 s.
-Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//body[@jsmodel='hspDDf']"}
+Caused by: NoSuchElementException: Unable to locate element: #L2AGLb
 	at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:91)
 	at com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:142)
-	at com.codeborne.selenide.impl.ExceptionWrapper.wrap(ExceptionWrapper.java:32)
-	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:154)
+	at com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:143)
+	at com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:127)
+	at com.codeborne.selenide.impl.WebElementSource.findAndAssertElementIsClickable(WebElementSource.java:173)
+	at com.codeborne.selenide.commands.Click.findElement(Click.java:46)
+	at com.codeborne.selenide.commands.Click.execute(Click.java:28)
+	at com.codeborne.selenide.commands.Click.execute(Click.java:21)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:161)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
 	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.screenshot(Unknown Source)
-	at stepdefinitions.CommonStepDefinitions.tumEkranGoruntusunuAlir(CommonStepDefinitions.java:71)
-	at ✽.tum ekran goruntusunu alir(file:///C:/Users/Lenovo%20i5/Desktop/MyFirstSelenideProject/./src/test/resources/features/09_screenshots.feature:7)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//body[@jsmodel='hspDDf']"}
-  (Session info: chrome=131.0.6778.205)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+	at stepdefinitions.ScreenShotStepDefinitions.tumEkranGoruntusunuAlir(ScreenShotStepDefinitions.java:21)
+	at ✽.tum ekran goruntusunu alir(file:///C:/Users/Lenovo%20i5/Desktop/MyFirstSelenideProject/./src/test/resources/features/10_cross_browser.feature:13)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: #L2AGLb
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.17.0', revision: 'e52b1be057*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [688c909b5cfcee34ed7f978199c6937b, findElement {using=xpath, value=//body[@jsmodel='hspDDf']}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\LENOVO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53778}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53778/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 688c909b5cfcee34ed7f978199c6937b
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [35a92122-113c-42d9-83a2-86243fc5a01e, findElement {using=id, value=L2AGLb}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21988, moz:profile: C:\Users\LENOVO~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 35a92122-113c-42d9-83a2-86243fc5a01e
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -48,13 +53,16 @@ Session ID: 688c909b5cfcee34ed7f978199c6937b
 	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:44)
 	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:33)
 	at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:122)
-	at com.codeborne.selenide.commands.TakeScreenshot.execute(TakeScreenshot.java:19)
-	at com.codeborne.selenide.commands.TakeScreenshot.execute(TakeScreenshot.java:13)
+	at com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:116)
+	at com.codeborne.selenide.impl.WebElementSource.findAndAssertElementIsClickable(WebElementSource.java:173)
+	at com.codeborne.selenide.commands.Click.findElement(Click.java:46)
+	at com.codeborne.selenide.commands.Click.execute(Click.java:28)
+	at com.codeborne.selenide.commands.Click.execute(Click.java:21)
 	at com.codeborne.selenide.commands.Commands.execute(Commands.java:161)
 	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
 	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.screenshot(Unknown Source)
-	at stepdefinitions.CommonStepDefinitions.tumEkranGoruntusunuAlir(CommonStepDefinitions.java:71)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+	at stepdefinitions.ScreenShotStepDefinitions.tumEkranGoruntusunuAlir(ScreenShotStepDefinitions.java:21)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
@@ -107,8 +115,9 @@ Session ID: 688c909b5cfcee34ed7f978199c6937b
 ]]>
 </failure>
 <system-out><![CDATA[
-Given kullanici "https://www.google.com/" adresine gider....................passed
-And tum ekran goruntusunu alir..............................................failed
+Given kullanici browser tipini "firefox" olarak secer.......................passed
+Given kullanici "https://www.amazon.com/" adresine gider....................passed
+Then tum ekran goruntusunu alir.............................................failed
 ]]></system-out>
 </testcase>
 </testsuite>

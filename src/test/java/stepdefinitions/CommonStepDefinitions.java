@@ -58,17 +58,5 @@ public class CommonStepDefinitions {
 
     }
 
-    @And("tum ekran goruntusunu alir")
-    public void tumEkranGoruntusunuAlir() {
 
-        try {
-            $(By.id("L2AGLb")).click();
-        } catch (Exception e) {
-            System.out.println("Akzeptiren Cikmadi Sorun Yok");
-        }
-    
-        sleep(10000);
-    
-        testCenterPage.googleFull.screenshot();
-    }
 }
