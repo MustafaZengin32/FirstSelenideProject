@@ -10,8 +10,16 @@ import com.codeborne.selenide.Selenide;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.openqa.selenium.By;
+import pages.TestCenterPage;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class CommonStepDefinitions {
+
+    TestCenterPage testCenterPage=new TestCenterPage();
+
     @Given("kullanici {string} adresine gider")
     public void kullaniciAdresineGider(String string) {
 
@@ -48,5 +56,19 @@ public class CommonStepDefinitions {
     public void sayfayiAcikTutar() {
         holdBrowserOpen = true;
 
+    }
+
+    @And("tum ekran goruntusunu alir")
+    public void tumEkranGoruntusunuAlir() {
+
+        try {
+            $(By.id("L2AGLb")).click();
+        } catch (Exception e) {
+            System.out.println("Akzeptiren Cikmadi Sorun Yok");
+        }
+    
+        sleep(10000);
+    
+        testCenterPage.googleFull.screenshot();
     }
 }

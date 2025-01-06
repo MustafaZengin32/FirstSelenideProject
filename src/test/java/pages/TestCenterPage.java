@@ -51,6 +51,17 @@ public class TestCenterPage {
 
     public SelenideElement dropTarget=$("#droppable");
 
+    //Exp Wait
+
+    public SelenideElement startButton=$(By.tagName("button"));
+
+    public  SelenideElement helloWorld=$(By.id("finish"));
+
+    //Screen Shot
+
+    public SelenideElement googleFull=$(By.xpath("//body[@jsmodel='hspDDf']"));
+
+    public SelenideElement googlePicture=$(By.cssSelector(".lnXdpd"));
 
 
 
